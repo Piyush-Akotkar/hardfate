@@ -1,0 +1,59 @@
+.game-book-box{
+    position: relative;
+}
+.game-book-img{
+    width: 40%;
+}
+.game-book-text{
+    position: absolute;
+    left: 0%;
+    top: -10%;
+}
+.game-book-text-right{
+    position: absolute;
+    right: 0%;
+    bottom: -10%;
+}
+.game-book-text-right-middle{
+    position: absolute;
+    right: 0%;
+    bottom: 40%;
+}
+.game-book-text-middle{
+    position: absolute;
+    left: 0%;
+    bottom: -40%;
+}
+.arrow{
+    position: absolute;
+    width: 15%;
+    top: 40%;
+    left: 15%;
+}
+.arrow-flip{
+    transform: scaleX(-1) rotate(-15deg);
+}
+.arrow-right{
+    position: absolute;
+    width: 15%;
+    bottom: 10%;
+    right: 15%;
+}
+.arrow-flip-right{
+    transform: rotate(15deg);
+}
+.arrow-top{
+    position: absolute;
+    width: 15%;
+    top: 20%;
+    left: 15%;
+}
+
+.game-challenge-img{
+    width: 90px;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 10px;
+    border: 2px solid #fff;
+    transition: 0.6s;
+}

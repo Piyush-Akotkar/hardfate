@@ -1,0 +1,126 @@
+:root{
+  --contest: #f75934;
+  --blue: #7c83fd;
+  --parrot: #28df99;
+  --light-green: #9ede73;
+  --pink: #ff7df9;
+  --teal: #5dc0a6;
+  --cyan: #47b5ff;
+  --dark-cyan: #009eff;
+  --maroon: #ff8fb1;
+  --darker: #231f20;
+  --purple: #a760ff;
+  --deepblue: #0096ff;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0c0c0c !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a{
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'metorius';
+  src: local('metorius'), url('./fonts/Metorius_Sans.otf');
+}
+@font-face {
+  font-family: 'daily-spark-700';
+  src: local('daily-spark-700'), url('./fonts/daily-spark-daily-spark-sans-serif-700.ttf');
+}
+@font-face {
+  font-family: 'breaksong-breaksong';
+  src: local('breaksong-breaksong'), url('./fonts/breaksong-breaksong-400.ttf');
+}
+
+
+.metorius{
+  font-family: metorius, serif;
+  letter-spacing: 2px;
+}
+
+.breaksong-breaksong{
+  font-family: breaksong-breaksong, serif;
+  letter-spacing: 2px;
+}
+.daily-spark-700{
+  font-family: daily-spark-700, serif;
+  letter-spacing: 2px;
+}
+
+/* Text color */
+.text-light-green{
+  color: var(--light-green);
+}
+.text-midlight{
+  color: rgb(185, 185, 185);
+}
+.text-contest{
+  color: var(--contest);
+}
+.text-fortune{
+  color: var(--blue);
+}
+.text-parrot{
+  color: var(--parrot);
+}
+
+/* Background colors */
+.bg-pink{
+  background-color: var(--pink);
+}
+.bg-teal{
+  background-color: var(--teal);
+}
+.bg-blue{
+  background-color: var(--blue);
+}
+.bg-cyan{
+  background-color: var(--cyan);
+}
+.bg-maroon{
+  background-color: var(--maroon);
+}
+.bg-darker{
+  background-color: var(--darker);
+}
+.bg-purple{
+  background-color: var(--purple);
+}
+.bg-parrot{
+  background-color: var(--parrot);
+}
+.bg-deepblue{
+  background-color: var(--deepblue);
+}
+
+/* Rotate css */
+.tild{
+  transform: rotate(-25deg);
+  padding: 5rem 0 8rem 0;
+}
+
+.tild-right{
+  transform: rotate(25deg);
+  padding: 5rem 0 8rem 0;
+}
+
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #fff !important;
+  outline: 0;
+  box-shadow: none !important;
+}

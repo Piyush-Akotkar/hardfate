@@ -1,0 +1,22 @@
+.contest-lable{
+    font-size: 1.5rem;
+}
+.contest-form-control{
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 0.5rem;
+}
+.content-prize-card{
+    background-color: var(--dark-cyan);
+    border-radius: 3rem;
+    border: 4px solid #fff;
+}
+.optionListContainer span, .optionListContainer li{
+    color: #333;
+}
+.highlightOption{
+    background-color: var(--dark-cyan);
+}
+.multiSelectContainer li:hover {
+    background-color: var(--dark-cyan);
+}

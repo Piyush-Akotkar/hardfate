@@ -1,0 +1,63 @@
+.home-container{
+    min-width: 100%;
+    height: 80vh;
+}
+.home-heading-box{
+    margin-top: 8rem;
+    color: #fff;
+}
+.home-heading{
+    font-size: 5rem;
+}
+.home-scroll{
+    position: absolute;
+    transform: translate(-50%, 50%);
+    left: 50%;
+    bottom: 10%;
+}
+
+
+.btn-home{
+    margin: 0 0.5rem;
+    font-family: metorius;
+    color: #fff;
+}
+
+.btn-contest{
+    background-color: var(--contest);
+}
+.btn-contest:hover{
+    color: #fff;
+    background-color: var(--contest);
+    box-shadow: inset 0px 0px 10px #000;
+}
+.btn-fortune{
+    background-color: var(--fortune);
+}
+.btn-fortune:hover{
+    color: #fff;
+    background-color: var(--fortune);
+    box-shadow: inset 0px 0px 10px #000;
+}
+.btn-giveaway{
+    background-color: var(--giveaway);
+}
+.btn-giveaway:hover{
+    color: #fff;
+    background-color: var(--giveaway);
+    box-shadow: inset 0px 0px 10px #000;
+}
+
+.btn-theme{
+    font-family: metorius;
+    color: #fff;
+    border: 4px solid #fff;
+    border-radius: 1rem;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    padding: 0.3rem 2.5rem 0rem 2.5rem;
+}
+.btn-theme:hover{
+    background-color: #fff;
+    color: #333;
+}
