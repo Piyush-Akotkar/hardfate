@@ -1,6 +1,6 @@
 import { db } from "../config/db.js";
 
-export const creatGame = (req, res) => {
+export const creatGame = (req, res) => {  
   // Get game details
   const gameDetails = `{\"id\":\"ewdewd\",\"title\":\"Fortune play\",\"books\":\"25\",\"loops\":\"5\",\"innerLoops\":{\"loop0\":\"300\",\"loop1\":\"500\",\"loop2\":\"800\",\"loop3\":\"900\",\"loop4\":\"500\"},\"gameplay\":\"3000\",\"marbles\":\"1200\"}`;
   // res.send(gameDetails)
@@ -119,7 +119,72 @@ export const getGameDetailById = (req, res) => {
 };
 
 export const saveFlips = (req, res) => {
-  let uuid = req.params.id;
-  let flip = req.body.flip;
-  console.log(flip);
+  const { id: uuid } = req.params;
+  const { flip } = req.body;
+  
+  const selectFlips = `SELECT flips, gameplay, winners FROM game WHERE uuid=?`;
+  db.query(selectFlips, [uuid], (err, results) => {
+    if (err) {
+      return res.status(500).json({ message: "error" });
+    }
+    if(results){
+      // Check the flips is less then gameplays
+      const flipCount = results[0].flips + flip;
+      const winners = results[0].winners
+      if (results[0].flips <= results[0].gameplay) {
+        updateFlipsCount(flipCount, res, uuid, winners);
+      } 
+      else if(results[0].flips == null || results[0].flips == 0){
+        updateFlipsCount(1, res, uuid, winners);
+      } 
+      else {
+        return res.json({ message:"success", text: "Game Over", statusCode: 200 });
+      }
+    } else {
+      return res.json({ message: "no result", statusCode: 200 });
+    }
+  })
 };
+
+// update Flips count
+const updateFlipsCount = (Flipscount, res, uuid, winner) => {
+  const updateFlips = 'UPDATE game SET flips = ? WHERE uuid=?';
+  db.query(updateFlips, [Flipscount, uuid], (err, result) => {
+    if (err) {
+      return res.status(500).json({ message: "error", statusCode: 500 });
+    }
+
+    const winnersList = JSON.parse(winner);
+
+    // get the novel winner list to check wether the user is winning or not
+    const novelWinner = JSON.parse(winnersList.novels);
+      
+    // get the marble winner list to check wether the user is winning or not
+    const marbleWinner = JSON.parse(winnersList.marbles);
+    
+    if(novelWinner.includes(Flipscount)){
+      res.json({ message: "success", text: "Congratulations! You win the Novel.", statusCode: 200 });
+    } else if(marbleWinner.includes(Flipscount)) {
+      res.json({ message: "success", text: "Congratulations! You win the Marble.", statusCode: 200 });
+    } else {
+      res.json({ message: "success", text: "Sorry! Try again", statusCode: 200 });
+    }
+  });
+};
+
+// check game over
+export const checkGameOverById = (req, res) => {
+  let {uuid} = req.params
+  const gameOverquery = "SELECT gameplay, flips FROM game WHERE uuid=?";
+  db.query(gameOverquery, [uuid], (err, results) => {
+    if(err) {
+      res.status(500).json({message: "error", error: err})
+    }
+
+    if(results[0].gameplay == results[0].flips){
+      res.send({isGame:false})
+    }else{
+      res.send({isGame:true})
+    }
+  })
+}

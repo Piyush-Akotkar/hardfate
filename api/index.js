@@ -15,7 +15,6 @@ app.use("/api/auth", loginRoute);
 app.use(authetication);
 app.use("/api/games", gameRoute);
 app.use("/api/users", userRoute);
-console.log('test');
 
 app.listen(8080, () => {
   console.log("Listening on Port 8080");
