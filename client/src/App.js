@@ -11,6 +11,7 @@ import Register from "./pages/Register";
 import Header from "./components/Header";
 import Shop from "./pages/Shop";
 import Footer from "./components/Footer";
+import CustomError from "./pages/CustomError";
 
 const Layout = () => {
   return (
@@ -64,6 +65,10 @@ const router = createBrowserRouter([
   {
     path: "/register",
     element: <Register />,
+  },
+  {
+    path: "/error",
+    element: <CustomError />,
   },
 ]);
 

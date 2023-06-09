@@ -23,8 +23,8 @@ function Game() {
                         <div className="game-book-text">
                             <p className='h5 tild breaksong-breaksong text-light'>Dare to challenge your <br />fate and this hardback <br />worth rupee 2499 could <br />be yours.</p>
                         </div>
-                        <img src={require('../img/arrow.png')} alt="" className='img-fluid arrow arrow-flip' srcset="" />
-                        <img src={require('../img/game1.png')} alt="" className='game-book-img' srcset="" />
+                        <img src={require('../img/arrow.png')} alt="" className='img-fluid arrow arrow-flip' />
+                        <img src={require('../img/game1.png')} alt="" className='game-book-img' />
                     </div>
 
                     <div className="text-center my-5 text-light">
@@ -58,14 +58,14 @@ function Game() {
                         <div className="game-book-text">
                             <p className='h5 tild breaksong-breaksong text-light'>Dare to challenge your <br />fate and this paperback <br />worth rupee 599 could <br />be yours.</p>
                         </div>
-                        <img src={require('../img/arrow.png')} alt="" className='img-fluid arrow arrow-flip' srcset="" />
+                        <img src={require('../img/arrow.png')} alt="" className='img-fluid arrow arrow-flip' />
                         
-                        <img src={require('../img/game1.png')} alt="" className='game-book-img' srcset="" />
+                        <img src={require('../img/game1.png')} alt="" className='game-book-img' />
                         
                         <div className="game-book-text-right">
                             <p className='h5 tild-right breaksong-breaksong text-light'>The first person to flip the <br /> fortune card will win a <br /> Kafka on the shore, <br />gauranteed.</p>
                         </div>
-                        <img src={require('../img/arrow.png')} alt="" className='img-fluid arrow-right arrow-flip-right' srcset="" />
+                        <img src={require('../img/arrow.png')} alt="" className='img-fluid arrow-right arrow-flip-right' />
                     </div>
 
                     <div className="text-center my-5 text-light">
@@ -114,8 +114,8 @@ function Game() {
                                 super lucky.
                             </p>
                         </div>
-                        <img src={require('../img/game1.png')} alt="" className='game-book-img' srcset="" />
-                        <img src={require('../img/arrow.png')} alt="" className='img-fluid arrow arrow-flip' srcset="" />
+                        <img src={require('../img/game1.png')} alt="" className='game-book-img' />
+                        <img src={require('../img/arrow.png')} alt="" className='img-fluid arrow arrow-flip' />
                     </div>
 
                     <div className='text-center my-5'>
@@ -130,11 +130,11 @@ function Game() {
                     </div>
 
                     <div className="text-center my-5 game-book-box">
-                        <img src={require('../img/game2.png')} alt="" className='game-book-img' srcset="" />
+                        <img src={require('../img/game2.png')} alt="" className='game-book-img' />
                         <div className="game-book-text-right">
                             <p className='h5 tild-right breaksong-breaksong text-light'>The first person to flip the <br /> fortune card will win a <br /> Harry Potter BoxSet, <br />gauranteed.</p>
                         </div>
-                        <img src={require('../img/arrow.png')} alt="" className='img-fluid arrow-right arrow-flip-right' srcset="" />
+                        <img src={require('../img/arrow.png')} alt="" className='img-fluid arrow-right arrow-flip-right' />
                     </div>
 
                     <div className="text-center my-5 text-light">
@@ -175,7 +175,7 @@ function Game() {
                     </div>
 
                     <div className="text-center my-5 game-book-box">
-                        <img src={require('../img/arrow.png')} alt="" className='img-fluid arrow-top arrow-flip' srcset="" />
+                        <img src={require('../img/arrow.png')} alt="" className='img-fluid arrow-top arrow-flip' />
                         <div className="game-book-text-middle">
                             <p className='h5 tild breaksong-breaksong text-light'>
                                 Dare to challenge your luck &<br />
@@ -184,8 +184,8 @@ function Game() {
                                 worth rupee 499.
                             </p>
                         </div>
-                        <img src={require('../img/game1.png')} alt="" className='game-book-img' srcset="" />
-                        <img src={require('../img/arrow.png')} alt="" className='img-fluid arrow-right arrow-flip-right' srcset="" />
+                        <img src={require('../img/game1.png')} alt="" className='game-book-img' />
+                        <img src={require('../img/arrow.png')} alt="" className='img-fluid arrow-right arrow-flip-right' />
                     </div>
 
                     <div className='text-center my-5'>
@@ -200,12 +200,12 @@ function Game() {
                     </div>
 
                     <div className="text-center my-5 game-book-box">
-                        <img src={require('../img/arrow.png')} alt="" className='img-fluid arrow arrow-flip' srcset="" />
-                        <img src={require('../img/game2.png')} alt="" className='game-book-img' srcset="" />
+                        <img src={require('../img/arrow.png')} alt="" className='img-fluid arrow arrow-flip' />
+                        <img src={require('../img/game2.png')} alt="" className='game-book-img' />
                         <div className="game-book-text-right-middle">
                             <p className='h5 tild-right breaksong-breaksong text-light'>The first person to flip the <br /> fortune card will win a <br /> Harry Potter BoxSet, <br />gauranteed.</p>
                         </div>
-                        <img src={require('../img/arrow.png')} alt="" className='img-fluid arrow-right arrow-flip-right' srcset="" />
+                        <img src={require('../img/arrow.png')} alt="" className='img-fluid arrow-right arrow-flip-right' />
                     </div>
 
                     <div className="text-center my-5 text-light">
